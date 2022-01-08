@@ -1,0 +1,363 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  color: #2A457B;
+}
+
+body {
+  background-color: #EBF6FC;
+}
+
+body .container {
+  padding-left: 7%;
+  padding-right: 7%;
+  height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  body .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.head {
+  border-bottom: 2px solid #333;
+  margin: 0 auto;
+}
+
+.head h1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 6rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .head h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 100px;
+  }
+}
+
+.head p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .head p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+  }
+}
+
+#formCake {
+  padding-top: 150px;
+}
+
+@media (min-width: 1024px) {
+  #formCake {
+    padding-top: 50px;
+  }
+}
+
+#formCake label {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  #formCake label {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formCake .radioContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#formCake .radioContainer .radioCake {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  #formCake .radioContainer .radioCake {
+    width: 50%;
+  }
+}
+
+#formCake .radioContainer .radioCake img {
+  width: 70vw;
+}
+
+@media (min-width: 1024px) {
+  #formCake .radioContainer .radioCake img {
+    width: 25vw;
+  }
+}
+
+#formCake .radioContainer .radioCake input {
+  border: 2px solid #A27E3C;
+  width: 7vw;
+  height: 7vh;
+}
+
+@media (min-width: 1024px) {
+  #formCake .radioContainer .radioCake input {
+    width: 3vw;
+    height: 3vh;
+  }
+}
+
+#formCake h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  #formCake h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formCake .leftLabel {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formCake .orderInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formCake .orderInfo .labelsInfo {
+    width: 49%;
+  }
+}
+
+#formCake .orderInfo label {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  #formCake .orderInfo label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}
+
+#formCake .orderInfo span {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #808080;
+}
+
+@media (min-width: 1024px) {
+  #formCake .orderInfo span {
+    font-size: 1rem;
+  }
+}
+
+#formCake .orderInfo #desEmailDesk {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #formCake .orderInfo #desEmailDesk {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formCake .orderInfo #desEmailMobile {
+    display: none;
+  }
+}
+
+#formCake .orderInfo input, #formCake .orderInfo select {
+  width: 100%;
+  height: 175px;
+  margin-bottom: 60px;
+  border: 2px solid #A27E3C;
+  border-radius: 10px;
+  font-size: 4rem;
+  padding: 25px;
+  color: #808080;
+}
+
+@media (min-width: 1024px) {
+  #formCake .orderInfo input, #formCake .orderInfo select {
+    width: 100%;
+    height: 70px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+#formCake .orderInfo input option, #formCake .orderInfo select option {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#formCake .addressOrder {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#formCake .addressOrder .containerOrder {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #formCake .addressOrder .containerOrder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formCake .addressOrder .containerOrder .labelsOrder100 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formCake .addressOrder .containerOrder .labelsOrder50 {
+    width: 49%;
+  }
+}
+
+#formCake .addressOrder .containerOrder label {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  #formCake .addressOrder .containerOrder label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}
+
+#formCake .addressOrder .containerOrder span {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #808080;
+}
+
+#formCake .addressOrder .containerOrder input, #formCake .addressOrder .containerOrder select {
+  width: 100%;
+  height: 175px;
+  margin-bottom: 60px;
+  border: 2px solid #A27E3C;
+  border-radius: 10px;
+  font-size: 4rem;
+  padding: 25px;
+  color: #808080;
+}
+
+@media (min-width: 1024px) {
+  #formCake .addressOrder .containerOrder input, #formCake .addressOrder .containerOrder select {
+    width: 100%;
+    height: 70px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+#formCake .addressOrder .containerOrder input option, #formCake .addressOrder .containerOrder select option {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#formCake .buttonOrder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 150px;
+}
+
+#formCake .buttonOrder .buttonForm {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
+  border-radius: 250px;
+  background-color: #2A457B;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  #formCake .buttonOrder .buttonForm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

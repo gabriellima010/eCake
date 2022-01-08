@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <title>ecCake</title>
+  <link rel="stylesheet" type="text/css" href="/src/css/index.scss" />
+  <link rel="stylesheet" type="text/css" href="/src/css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>Cake Order Form</h1>
+      <p>Order your freshly baked cakes made using only the finest quality natural ingredients.</p>
+    </div>
+
+    <form action="src/js/" method=" POST" id="formCake">
+      <!-- Cakes -->
+      <label>Please choose your favorite cake from among the following.</label><br>
+      <div class="radioContainer">
+        <div class="radioCake">
+          <input type="radio" checked name="radioCake" id="boloFV" value="BolodeFrutasVermelhas">
+          <label for="boloFV"><img src="/src/img/cake1.jpg"></label><br>
+        </div>
+        <div class="radioCake">
+          <input type="radio" name="radioCake" id="boloM" value="BolodeMorango">
+          <label for="boloM"><img src="/src/img/cake2.jpg"></label><br>
+        </div>
+        <div class="radioCake">
+          <input type="radio" name="radioCake" id="boloN" value="BolodeNinho">
+          <label for="boloN"><img src="/src/img/cake3.jpg"></label><br>
+        </div>
+        <div class="radioCake">
+          <input type="radio" name="radioCake" id="boloAr" value="BoloArcoiris">
+          <label for="boloAr"><img src="/src/img/cake4.jpg"></label><br>
+        </div>
+      </div>
+
+      <!-- Informations -->
+      <h2>Order Information</h2>
+
+      <div class="orderInfo">
+        <br>
+        <div class="labelsInfo">
+          <label for="nome">Name</label><br>
+          <input class="formInput" type="text" id="nome" placeholder="First" required>
+        </div>
+        <br>
+
+        <div class="labelsInfo leftLabel">
+          <label for="sobrenome">Lastame</label><br>
+          <input class="formInput" type="text" id="sobrenome" placeholder="Last" required>
+        </div>
+        <br>
+
+        <div class="labelsInfo">
+          <label>Delivery date</label><br>
+          <input class="formInput" type="date" id="dataEntrega">
+        </div>
+        <br>
+
+        <div class="labelsInfo leftLabel">
+          <label>Preferred Delivery Time</label><br>
+          <input class="formInput" type="time" id="horaEntrega">
+        </div>
+        <br>
+
+        <div class="labelsInfo">
+          <label required for="telefone">Phone</label><br>
+          <input class="formInput" type="number" id="telefone">
+        </div>
+        <br>
+
+        <div class="labelsInfo leftLabel">
+          <label for="email">Email</label><br>
+          <span id="desEmailMobile">To receive the complete receipt</span>
+          <input required style="margin-bottom: 0px !important;" class="formInput" type="email" id="email">
+          <span id="desEmailDesk">To receive the complete receipt</span>
+        </div>
+        <br>
+
+      </div>
+
+      <!-- Address -->
+
+      <div class="addressOrder">
+        <label>Address</label>
+        <div class="containerOrder">
+          <div class="labelsOrder100">
+            <input class="formInput" type="text" id="endereco" placeholder="Street Address"><br>
+          </div>
+          <div class="labelsOrder100">
+            <input class="formInput" type="text" id="endereco2" placeholder="Street Address Line 2"><br>
+          </div>
+          <div class="labelsOrder50">
+            <input class="formInput" type="text" id="cidade" placeholder="City"><br>
+          </div>
+          <div class="labelsOrder50 leftLabel">
+            <input class="formInput" type="text" id="regiao" placeholder="Region"><br>
+          </div>
+          <div class="labelsOrder50">
+            <input class="formInput" type="number" id="cep" placeholder="Postal / Zip Code"><br>
+          </div>
+
+          <div class="labelsOrder50 leftLabel">
+            <select class="formInput" id="pais" placeholder="Country" form="formCake">
+              <option value="Brasil">Brasil</option>
+              <option value="México">México</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Japão">Japão</option>
+            </select>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="buttonOrder">
+        <input id="btnForm" class="buttonForm" type="button" value="Order" form="formCake">
+      </div>
+    </form>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="src/js/function.js"></script>
+</body>
+
+</html>
